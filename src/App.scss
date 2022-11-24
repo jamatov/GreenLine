@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navbar{
+  width: auto;
+  position: fixed;
+  z-index: 999;
+  padding: 0 50px;
+  img{
+    width: 69px;
+    height: 95px;
+  }
+}
+
+.carousel-indicators{
+  button{
+    display: none;
+  }
+}
