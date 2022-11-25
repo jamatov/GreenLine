@@ -1,23 +1,100 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none !important;
+  list-style-type: none !important;
 }
 
-.Navbar{
-  width: auto;
-  position: fixed;
-  z-index: 999;
-  padding: 0 50px;
-  img{
-    width: 69px;
-    height: 95px;
-  }
-}
+// .Navbar{
+//   // width: 1320px;
+//   display: flex;
+//   justify-content: space-between;
+//   // position: fixed;
+//   z-index: 999;
+//   padding: 0 50px;
+//   img{
+//     width: 69px;
+//     height: 95px;
+//   }
+
+//   .me-auto{
+//     gap: 30px;
+//     li{
+//       a{
+//         color: #000;
+//       }
+//     }
+//   }
+// }
 
 .carousel-indicators{
   button{
     display: none;
   }
+}
+
+.nav-bar{
+  // position: fixed;
+  z-index: 99;
+  // max-width: 1100px;
+  margin: 0 auto;
+
+  .nav-logo{
+    height: 70px;
+  }
+
+  .nav-list{
+    display: flex;
+    gap: 20px;
+
+    .nav-links{
+      a{
+        color: #000;
+      }
+      
+    }
+  }
+
+}
+
+
+.carousel-control-prev{
+  width: 10px;
+}
+
+.carousel-control-next{
+  width: 10px;
+}
+
+.carusel-info{
+  text-align: left;
+
+  .carusel-info__title{
+    color: #dae63f;
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    max-width: 310px;
+    position: relative;
+    text-transform: lowercase;
+  }
+
+  .carusel-info__texts{
+    border-top: 2px solid #dae63f;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 310px;
+    padding-top: 10px;
+    position: relative;
+  }
+ 
 }

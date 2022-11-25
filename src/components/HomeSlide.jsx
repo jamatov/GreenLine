@@ -6,16 +6,18 @@ import Img2 from '../images/home-slide2.jpg'
 
 export default function HomeSlide() {
   return (
-    <Carousel fade>
-      <Carousel.Item>
+    <Carousel fade className='home-carusel'>
+      <Carousel.Item >
         <img
-          className="d-block w-100"
+          className="d-block w-100 h-100"
           src={Img1}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <div className="carusel-info container">
+            <p className="carusel-info__title">about</p>
+            <p className='carusel-info__texts'>AOC provides multiple levels of comprehensive primary ENT care including the diagnosis and management of all diseases of the ears, nose, throat, and sinuses. In addition, AOC provides the full spectrum of subspecialty ENT care including the management of pediatric airway, cancer, skull base surgery, neuro-otology, advanced head and neck surgical and reconstructive procedures, and craniofacial surgery. </p>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -26,8 +28,10 @@ export default function HomeSlide() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div className="carusel-info">
+            <p className="carusel-info__title">about</p>
+            <p className='carusel-info__texts'>AOC provides multiple levels of comprehensive primary ENT care including the diagnosis and management of all diseases of the ears, nose, throat, and sinuses. In addition, AOC provides the full spectrum of subspecialty ENT care including the management of pediatric airway, cancer, skull base surgery, neuro-otology, advanced head and neck surgical and reconstructive procedures, and craniofacial surgery. </p>
+          </div>
         </Carousel.Caption>
       </Carousel.Item>
       
